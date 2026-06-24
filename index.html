@@ -172,6 +172,20 @@
     .cta-band p { max-width: 50ch; margin: 0 auto 2rem; color: var(--slate-400); }
     .cta-band .btns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 
+ /* ── Ways to reach us ── */
+    .reach-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; margin-top: 4rem; }
+    .reach-card {
+      background: var(--navy-800); border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius-lg); padding: 1.75rem; text-align: center;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .reach-card:hover { border-color: rgba(0,229,255,.3); transform: translateY(-3px); }
+    .reach-card .icon { font-size: 2rem; display: block; margin-bottom: .75rem; }
+    .reach-card h4 { margin-bottom: .4rem; font-size: .95rem; }
+    .reach-card p { font-size: .82rem; color: var(--slate-400); margin-bottom: .75rem; }
+    .reach-card a { font-size: .88rem; color: var(--arc); font-weight: 600; transition: color var(--transition); }
+    .reach-card a:hover { color: var(--arc-dim); }
+
     /* ── Responsive (page-specific) ── */
     @media (max-width: 900px) {
       .hero__inner { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
@@ -223,6 +237,7 @@
       <div class="hero__badge">▸ IT INFRASTRUCTURE SUPPORT &amp; SERVICES</div>
 <!--      <h1>Aljabbr Technologies : <em>IT Support Team Your Business Can Depend On</em></h1>  -->
       <p class="hero__sub">From desktop support to managing data centers, ALJABBR TECHNOLOGIES manages every layer of your IT — so your business stays online, secure, and ready to grow.</p>
+<p class="hero__sub">Whether you're dealing with recurring outages, planning an infrastructure upgrade, or opening a new office in the UAE — our team is ready to scope a solution.</p>
       <div class="hero__actions">
         <a href="contact.html" class="btn btn-primary">Request a Consultation →</a>
       </div>
@@ -385,7 +400,7 @@
   </div>
 </section>
 
-<!-- ══ CTA BAND ══ -->
+<!-- ══ CTA BAND ══ 
 <section class="section">
   <div class="container">
     <div class="cta-band reveal">
@@ -395,6 +410,37 @@
       <div class="btns">
         <a href="contact.html" class="btn btn-primary">Book a Free Assessment →</a>
       </div>
+    </div>
+  </div>
+</section>
+-->
+    <!-- Ways to reach us -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+  <div class="section-head reveal">
+      <div class="eyebrow">Ready to Start?</div>
+      <h2>Let's Stabilise and Scale Your IT</h2>
+ </div>
+     <div class="reach-grid reveal">
+      <div class="reach-card">
+        <span class="icon">📞</span>
+        <h4>Call Us</h4>
+        <p>Speak directly to a support engineer during business hours.</p>
+        <a href="tel:+971524251025">+971 524251025</a>
+      </div>
+      <div class="reach-card">
+        <span class="icon">✉️</span>
+        <h4>Email Us</h4>
+        <p>For non-urgent enquiries, project scoping, or documentation requests.</p>
+        <a href="mailto:support@aljabbr.com">support@aljabbr.com</a>
+      </div>
+      <div class="reach-card">
+        <span class="icon">💬</span>
+        <h4>WhatsApp Support</h4>
+        <p>Quick queries and ticket status updates via WhatsApp Business.</p>
+        <a href="https://wa.me/971524251025" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+      </div>
+   
     </div>
   </div>
 </section>
